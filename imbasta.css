@@ -1,0 +1,14 @@
+body{
+	display: flex;
+	gap: 10px;
+	height: 100vh;
+	width: 200vh;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url(ashe.jpg);
+	background-origin:initial ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	scrollbar-width:100px;
+}

@@ -1,0 +1,60 @@
+<html id="lod">
+<head>
+    <title> Refresh or click button for ash </title>
+</head>
+
+<body style="margin:10px 10px 10px -50px;font-family:Comic Sans MS;color:white;display:flex;flex-direction:column" onload="getrandash()">
+    <header>
+        <nav>
+            <ul>
+                <li style="padding:0px 10px 0px 10px;">
+                    <a href="home.html">home </a>
+                </li>
+                <li style="padding:0px 10px 0px 10px;">
+                    <a href="ashpagestemplate.html">random ash image button</a>
+                </li>
+                <li style="padding:0px 10px 0px 10px;">
+                    <a href="ashgame.html">flappy ash </a>
+                </li>
+                <li style="padding:0px 10px 0px 10px;">
+                    <a href="ashmerch.html">merchandising</a>
+                </li>
+                <li style="padding:0px 10px 0px 10px;">
+                    <a href="leranmre.html"> learn more </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <link rel="stylesheet" href="defaultassstyle.css">
+    <center><h2 style="color:slategrey"> Ash Image Generator </h2></center>
+    <button onclick="getrandash()"> reload image </button>
+    <br> <br>
+    <span style="margin:20px 10px 5px -00px" width="75px" height="100px" id="result" align="center"> </span>
+    <script>
+        function refreshpage() {
+            document.getElementById('lod').src = document.getElementById('lod').src
+        }
+
+        function getrandash() {
+            var randash = new Array();
+
+            randash[0] = "ashimg/ashe.jpg";
+            randash[1] = "ashimg/ashsmil.jpg";
+            randash[2] = "ashimg/ashsmile.jpg";
+            randash[3] = "ashimg/ashtexturema.png";
+            randash[4] = "ashimg/mewhen.jpg";
+            randash[5] = "ashimg/turtle ash.jpg";
+            randash[6] = "ashimg/ashsunny.jpg";
+            randash[7] = "ashimg/beatingintocup.jpg";
+            randash[8] = "ashimg/gonnashootupashcrib.jpg";
+            randash[9] = "ashimg/johnashna.jpg";
+            randash[10] = "ashimg/ashcrac.jpg";
+
+            var number = Math.floor(Math.random() * randash.length);
+
+            return document.getElementById("result").innerHTML = '<img width="500px" height="700px" src="' + randash[number] + '" />';
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<html>
+<title>
+	ashwebsite homepage
+</title>
+<head>
+	
+</head>
+	
+
+<body style="margin:10px 10px 10px -50px;font-family:Comic Sans MS;color:white;display:flex;flex-direction:column" onload="dotos()">
+	<div id="tosshit" class="modal">
+
+
+
+		<div class="tos">
+			<span class="closetos">&times;</span>
+			<p style="font-size:50px;font-family:Impact">terms of service</p>
+			<p> the services provided by (name) are intended for use of persons over the age of 6. persons under the age of 6 are not permitted to use the site under penalty of the red among us guy breaking into your house and eating your pet. </p>
+			<p> IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE FORCED TO USE THE SERVICES AND YOU MUST CLICK DISAGREE IMMEDIATELY. </p>
+
+		</div>
+	</div>
+	<header>
+		<nav>
+			<ul>
+				<li style="padding:0px 10px 0px 10px;">
+					<a href="home.html">home </a>
+				</li>
+				<li style="padding:0px 10px 0px 10px;">
+					<a href="ashpagestemplate.html">random ash image button</a>
+				</li>
+				<li style="padding:0px 10px 0px 10px;">
+					<a href="ashgame.html">flappy ash </a>
+				</li>
+				<li style="padding:0px 10px 0px 10px;">
+					<a href="ashmerch.html">merchandising</a>
+				</li>
+				<li style="padding:0px 10px 0px 10px;">
+					<a href="leranmre.html"> learn more </a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<h1><img src="ashtrademaked.png" height="100px" width="150px" style="padding:5px 20px 0px 0px" alt="click or ur gae" onclick="Window.open('noballs.html')"></h1>
+	<link rel="stylesheet" href="defaultassstyle.css">
+	<p style="font-family:Comic Sans MS;color:white">
+		a picture of ash
+	</p>
+	<p>
+		<image style="align-self:center" width="700px" height="500px" id="centreash" onload="obunga()" src="ashe.jpg"> </image>
+	</p>
+	<p>
+		<script>
+
+			//imgchage
+			var imagearray = [], x = -1;
+            imagearray[0] = "ashimg/ashcrac.jpg";
+            imagearray[1] = "ashimg/ashe.jpg";
+            imagearray[2] = "ashimg/ashsmil.jpg";
+            imagearray[3] = "ashimg/ashsmile.jpg";
+            imagearray[4] = "ashimg/ashsunny.jpg";
+            imagearray[5] = "ashimg/johnashna.jpg";
+
+			function necimg() {
+                x = (x === imagearray.length - 1) ? 0 : x + 1;
+                document.getElementById("centreash").src = imagearray[x];
+			}
+
+            function obunga() {
+                setInterval(necimg, 1500);
+            }
+
+
+			//endimgchange
+
+			//tos
+			//tos var stuff
+			var span = document.getElementsByClassName("closetos")[0];
+			var modal = document.getElementById("tosshit");
+			//end of var shit
+			function dotos() {
+				modal.style.display = "block";
+			}
+			//tosend
+			//closeshitpart
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+
+			span.onclick = function () {
+				modal.style.display = "none";
+			}
+			//endofcloseshit
+			function setbeans(event) {
+				var sussys = document.getElementById('outputty');
+				var beans = event.target.text;
+			}
+			function newbes(event) {
+				const newshit = document.createElement('p');
+				newshit.style = "font-size:100px; color:purple";
+				newshit.innerHTML = "beans";
+				document.body.appendChild(newshit);
+			}
+
+
+		</script>
+		<input type="button" value="click to add beans" id="outputty" onclick="newbes(event)">
+	</p>
+	<p style="padding:200px">
+		<img >
+	</p>
+</body>
+<footer>
+	<p style="display:flex;align-content:center;">our socialisms</p>
+	<p> <li style="padding:0px 50px 0px 50px"><img src="somethin"></li>
+		<li style="padding:0px 50px 0px 50px"><img src="somethin"></li>
+		<li style="padding:0px 50px 0px 50px"><img src="somethin"></li></p>
+</footer>
+</html>

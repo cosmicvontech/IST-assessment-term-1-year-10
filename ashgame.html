@@ -1,0 +1,35 @@
+<html>
+<body style="justify-content:center;align-content:center;display:flex;flex-direction:column;mask-image:src(ashe.jpg);">
+    <link rel="stylesheet" href="defaultassstyle.css">
+    <header>
+        <nav style="margin:0px 0px 0px -60px">
+            <ul>
+                <li style="padding:0px 10px 0px 10px;">
+                    <a href="home.html">home </a>
+                </li>
+                <li style="padding:0px 10px 0px 10px;">
+                    <a href="ashpagestemplate.html">random ash image button</a>
+                </li>
+                <li style="padding:0px 10px 0px 10px;">
+                    <a href="ashgame.html">flappy ash </a>
+                </li>
+                <li style="padding:0px 10px 0px 10px;">
+                    <a href="ashmerch.html">merchandising</a>
+                </li>
+                <li style="padding:0px 10px 0px 10px;">
+                    <a href="leranmre.html"> learn more </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <iframe style="justify-content:center;align-content:center;width:500px;height:300px;outline-width:10px;outline-color:black;offset-anchor:center;offset-position:center" id='load' src="ashalack.html"></iframe>
+    <p>
+        <input type="image" style="offset-anchor:center;offset-position:center" src="retrybutton.png" value="retry" onclick="document.getElementById('load').src = document.getElementById('load').src">
+    </p>
+    <script>
+        function() {
+            document.getElementById('load').src = document.getElementById('load').src
+        }
+    </script>
+</body>
+</html>
